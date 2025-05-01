@@ -14,6 +14,48 @@ Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden
 
 # ÇÖZÜM
 
+""" Verilen dizi: [22,27,16,2,18,6]
+
+Insertion Sort yani araya ekleme sıralama algoritması ikinci elemandan başlayarak elemanın kendinden önceki elemanlarla karşılaştırılması suretiyle büyük elemanların dizide sağa doğru kaydırılması işlemlerini tekrar eder.
+
+Insertion Sort Aşamaları:
+1.adım:
+- ilk eleman olan 22 yerinde kalır çünkü diğer elemanlardan büyük.
+- Sonuç: [22, 27, 16, 2, 18, 6]
+
+2.adım:
+- 27, 22'den büyük olduğu için yerinde kalır.
+- Sonuç: [22, 27, 16, 2, 18, 6]
+
+3.adım:
+- 16, 27'den küçük olduğu için 27'nin yerine geçer --> [22, 16, 27, 2, 18, 6]
+- 16, 22'den küçük olduğu için 22'nin yerine geçer.
+- Sonuç: [16, 22, 27, 2, 18, 6]
+
+4.adım:
+-2, 27, 22, ve 16'dan küçük olduğu için, tüm öğeler sağa kayar ve 2 en başa gelir.
+- Sonuç: [2, 16, 22, 27, 18, 6]
+
+5.adım:
+- 18, 27 ve 22'den küçük ama 16'dan büyük olduğu için, 18 22'nin yerine gelir.
+- Sonuç: [2, 16, 18, 22, 27, 6]
+
+6.adım:
+- 6, 27, 22, 18 ve 16'dan küçük olduğu için, bu öğeler sağa kayar ve 6, 16'nın yerine gelir.
+- Sonuç: [2, 6, 16, 18, 22, 27]
+
+Big-O Gösterimi
+Insertion Sort algoritmasının Big-O gösterimi:
+
+-Worst-case Time Complexity: O(n²)
+Insertion Sort, her seferinde diziyi doğru sıraya yerleştirirken her elemanı karşılaştırır. En kötü durumda (dizinin tamamen tersten sıralandığı durum), her eleman sırasıyla n adımda yerleştirilir, bu da O(n²)'dir.
+
+- Average-case Time Complexity: O(n²)
+Ortalama durumda da, her eleman yaklaşık olarak n/2 kez karşılaştırılır ve bu da O(n²)'dir.
+
+- Best-case Time Complexity: O(n)
+En iyi durumda (dizi zaten sıralı), her eleman yalnızca bir kez kontrol edilir ve O(n) zaman alır.
+
 
 
 
