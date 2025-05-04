@@ -1,0 +1,34 @@
+# PROBLEM
+
+"""
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+"""
+
+# ÇÖZÜM
+
+"""
+Aşamalar:
+
+1. Root 7'dir. (İlk elemanı aldık)
+2. 5 < 7 ve 5, 7'nin soluna yerleştirilir.
+3. 1 < 7, 1 < 5 ve 1, 5'in soluna yerleştirilir.
+4. 8 > 7 ve 8, 7'nin sağına yerleştirilir.
+5. 3 < 7, 3 < 5, 3 > 1 ve 3, 1'in sağına yerleştirilir.
+6. 6 < 7, 6 > 5 ve 6, 5'in sağına yerleştirilir.
+7. 0 < 7, 0 < 5, 0 < 1 ve 0, 1'in soluna yerleştirilir.
+8. 9 > 7, 9 > 8 ve 9, 8'in sağına yerleştirilir.
+9. 4 < 7, 4 < 5, 4 > 1, 4 > 3 ve 4, 3'ün sağına yerleştirilir.
+10. 2 < 7, 2 < 5, 2 > 1, 2 < 3 ve 2, 3'ün soluna yerleştirilir.
+
+Sonuç:
+        7
+       / \
+      5   8
+     / \    \
+    1   6    9
+   / \
+  0   3
+     / \
+    2   4
+
+"""
